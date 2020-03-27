@@ -1,0 +1,11 @@
+# ask user for arguments
+km = float(input("How many km will you drive? -> "))
+Lpkm = float(input("What's the fuel efficiency of the vehicle (in L/km)? -> "))
+price = float(input("How much does each liter of fuel cost? -> "))
+
+# calculate cost of trip
+total_L = km*Lpkm           # total Liters consumed
+cost = total_L*price        # total cost of trip
+
+# output result to user
+print("\nThe total cost of your trip is $", cost, sep='')
